@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hindu Philosophy & History — Interactive Learning</title>
+<meta name="description" content="Three in-depth interactive explorations of Hinduism: the Vedas, the six darśanas, and the historical timeline from the Indus Valley to the medieval period.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#1A0E00;color:#E8DCC4;font-family:'Source Sans 3',sans-serif;min-height:100vh}
+a{color:inherit;text-decoration:none}
+
+/* Hero */
+.hero{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:5rem 2rem 4rem;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,rgba(154,120,0,.12) 0%,transparent 70%);pointer-events:none}
+.om{font-size:5rem;color:rgba(212,175,55,.18);margin-bottom:1.5rem;user-select:none}
+.eyebrow{font-family:'Inter',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:#9A7800;margin-bottom:1rem}
+h1{font-family:'Playfair Display',serif;font-size:clamp(2.2rem,5vw,3.6rem);font-weight:400;color:#F5EDD6;line-height:1.18;max-width:680px}
+h1 em{font-style:italic;color:#D4AF37}
+.sub{font-size:1.05rem;color:#A89070;line-height:1.75;max-width:520px;margin:1.2rem auto 0}
+.divider{width:48px;height:1px;background:#9A7800;margin:2.5rem auto}
+
+/* Cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;max-width:1080px;margin:0 auto;padding:0 2rem 5rem}
+.card{background:#FBF8F0;border-radius:12px;overflow:hidden;display:flex;flex-direction:column;transition:transform .22s,box-shadow .22s;color:#2C1F08}
+.card:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.35)}
+.card-img{height:200px;overflow:hidden;position:relative}
+.card-img img{width:100%;height:100%;object-fit:cover;filter:brightness(.85) saturate(.92);transition:filter .3s}
+.card:hover .card-img img{filter:brightness(1) saturate(1)}
+.card-img-overlay{position:absolute;inset:0;background:linear-gradient(transparent 40%,rgba(0,0,0,.55))}
+.card-badge{position:absolute;top:.75rem;left:.75rem;background:rgba(0,0,0,.55);color:#D4AF37;font-family:'Inter',sans-serif;font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:.25rem .55rem;border-radius:3px;backdrop-filter:blur(4px)}
+.card-body{padding:1.4rem 1.5rem 1.6rem;flex:1;display:flex;flex-direction:column}
+.card-num{font-family:'Inter',sans-serif;font-size:.62rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#9A7800;margin-bottom:.4rem}
+.card-title{font-family:'Playfair Display',serif;font-size:1.45rem;font-weight:700;line-height:1.22;margin-bottom:.65rem;color:#2C1F08}
+.card-desc{font-size:.92rem;color:#5A4030;line-height:1.68;flex:1}
+.card-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:1rem 0}
+.tag{font-family:'Inter',sans-serif;font-size:.62rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.22rem .55rem;border-radius:3px;background:#EDE5CC;color:#7A6340}
+.card-cta{display:inline-flex;align-items:center;gap:.45rem;margin-top:auto;padding:.55rem 1rem;background:#2C1F08;color:#F5EDD6;border-radius:6px;font-family:'Inter',sans-serif;font-size:.8rem;font-weight:600;letter-spacing:.04em;transition:background .2s;align-self:flex-start}
+.card-cta:hover{background:#9A7800}
+.card-cta svg{transition:transform .2s}
+.card:hover .card-cta svg{transform:translateX(3px)}
+
+/* Footer */
+footer{text-align:center;padding:2.5rem 1rem;border-top:1px solid #2A1A08;font-family:'Inter',sans-serif;font-size:.74rem;color:#3A2A10}
+footer a{color:#7A6340}
+footer a:hover{color:#9A7800}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="om" aria-hidden="true">ॐ</div>
+  <div class="eyebrow">Interactive Learning Resources</div>
+  <h1>Hindu <em>Philosophy</em><br>&amp; History</h1>
+  <p class="sub">Three in-depth explorations — scrollytelling essays with interactive timelines, diagrams, and audio — designed for anyone curious about one of the world's oldest living traditions.</p>
+  <div class="divider"></div>
+</div>
+
+<div class="cards">
+
+  <!-- The Vedas -->
+  <a class="card" href="vedas.html">
+    <div class="card-img">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/50/1500-1200_BCE%2C_Rigveda_manuscript_page_sample_iii%2C_Sanskrit%2C_Devanagari.jpg"
+           alt="Rigveda manuscript page" loading="lazy">
+      <div class="card-img-overlay"></div>
+      <div class="card-badge">Interactive essay</div>
+    </div>
+    <div class="card-body">
+      <div class="card-num">Chapter 01</div>
+      <div class="card-title">The Vedas</div>
+      <p class="card-desc">From the Indus Valley to the Bhagavad-gītā — the origins, structure, gods, and living traditions of the world's oldest surviving body of religious literature.</p>
+      <div class="card-tags">
+        <span class="tag">Origins</span>
+        <span class="tag">Oral tradition</span>
+        <span class="tag">Sanskrit phonetics</span>
+        <span class="tag">Sacred fire</span>
+        <span class="tag">Upaniṣads</span>
+      </div>
+      <span class="card-cta">Read &amp; explore <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg></span>
+    </div>
+  </a>
+
+  <!-- The Six Darśanas -->
+  <a class="card" href="darshanas.html">
+    <div class="card-img">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Agni_18th_century_miniature.jpg"
+           alt="18th century Indian miniature painting" loading="lazy"
+           style="object-fit:contain;background:#2C1A00;padding:.5rem">
+      <div class="card-img-overlay"></div>
+      <div class="card-badge">Interactive essay</div>
+    </div>
+    <div class="card-body">
+      <div class="card-num">Chapter 02</div>
+      <div class="card-title">The Six Darśanas</div>
+      <p class="card-desc">The six orthodox schools of Hindu philosophy — Sāṃkhya, Yoga, Nyāya, Vaiśeṣika, Mīmāṃsā, and Vedānta — and how they debate consciousness, reality, and liberation.</p>
+      <div class="card-tags">
+        <span class="tag">Sāṃkhya</span>
+        <span class="tag">Yoga</span>
+        <span class="tag">Vedānta</span>
+        <span class="tag">Nyāya</span>
+        <span class="tag">Philosophy</span>
+      </div>
+      <span class="card-cta">Read &amp; explore <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg></span>
+    </div>
+  </a>
+
+  <!-- History -->
+  <a class="card" href="history.html">
+    <div class="card-img">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Mohenjodaro_-_view_of_the_stupa_mound.JPG"
+           alt="Ruins of Mohenjo-daro" loading="lazy">
+      <div class="card-img-overlay"></div>
+      <div class="card-badge">Interactive timeline</div>
+    </div>
+    <div class="card-body">
+      <div class="card-num">Chapter 03</div>
+      <div class="card-title">A Historical Timeline</div>
+      <p class="card-desc">From the Indus Valley Civilisation in 2600 BCE to the Vijayanagara Empire in 1400 CE — 3,000 years of Hindu history mapped and narrated interactively.</p>
+      <div class="card-tags">
+        <span class="tag">IVC</span>
+        <span class="tag">Vedic age</span>
+        <span class="tag">Gupta empire</span>
+        <span class="tag">Bhakti movement</span>
+        <span class="tag">Medieval</span>
+      </div>
+      <span class="card-cta">Read &amp; explore <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 7h10M8 3l4 4-4 4"/></svg></span>
+    </div>
+  </a>
+
+</div>
+
+<footer>
+  Built with care for curious minds. Images via <a href="https://commons.wikimedia.org" target="_blank" rel="noopener">Wikimedia Commons</a> (CC-licensed &amp; public domain).
+</footer>
+
+</body>
+</html>
